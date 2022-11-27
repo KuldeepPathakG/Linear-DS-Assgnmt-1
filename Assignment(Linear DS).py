@@ -26,12 +26,17 @@ if __name__ == '__main__':
  
  
  Question-2::
- #The original array
-arr = [11, 22, 33, 44, 55]
-print("Array is :",arr)
- 
-res = arr[::-1] #reversing using list slicing
-print("Resultant new reversed array:",res)
+def reversearray(arr,start,end):
+    while start<end:
+        A[start],A[end]= A[end],A[start]
+        start+=1
+        end-=1   
+# Driver Code        
+A = [1,2,3,4,5]
+print(A)
+print("The reversearray is:")
+reversearray(A,0,4)
+print(A)
 
 Question-3::
 # Python program to check if strings are rotations of
